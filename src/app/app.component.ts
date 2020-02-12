@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+
+import { ViewChildComponent } from './view-child/view-child.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'nine-and-a-half-weeks';
+  @ViewChild(ViewChildComponent) child: ViewChildComponent;
+
+  testViewChild(): void {
+    this.child.testFunctionCallerByParentComponent();
+  }
 }
