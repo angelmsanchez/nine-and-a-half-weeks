@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewChildComponent } from './view-child/view-child.component';
+import { ViewChildStaticComponent } from './view-child-static/view-child-static.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ViewChildComponent
+    ViewChildComponent,
+    ViewChildStaticComponent
   ],
   imports: [
     BrowserModule,

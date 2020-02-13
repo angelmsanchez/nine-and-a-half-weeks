@@ -13,7 +13,7 @@ export class ViewChildComponent implements OnInit {
   }
 
   testFunctionCallerByParentComponent(): void {
-    console.log('test function caller by parent component');
+    console.log('Test ViewChildComponent');
   }
 
 }
