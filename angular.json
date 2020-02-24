@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "nine-and-a-half-weekss": {
+    "nine-and-a-half-weeks": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/nine-and-a-half-weekss",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "nine-and-a-half-weekss:build"
+            "browserTarget": "nine-and-a-half-weeks:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "nine-and-a-half-weekss:build:production"
+              "browserTarget": "nine-and-a-half-weeks:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "nine-and-a-half-weekss:build"
+            "browserTarget": "nine-and-a-half-weeks:build"
           }
         },
         "test": {
@@ -114,18 +114,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "nine-and-a-half-weekss:serve"
+            "devServerTarget": "nine-and-a-half-weeks:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "nine-and-a-half-weekss:serve:production"
+              "devServerTarget": "nine-and-a-half-weeks:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "nine-and-a-half-weekss",
+  "defaultProject": "nine-and-a-half-weeks",
   "cli": {
     "analytics": false
   }
