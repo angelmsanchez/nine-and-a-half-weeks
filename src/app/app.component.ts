@@ -29,7 +29,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   loadFoo() {
     if (!this.foo) {
-      this.foo = import(`./foo/foo.component`)
+      this.foo = import(/* webpackChunkName: 'test-angel', webpackPrefetch: true */`./foo/foo.component`)
         .then(({ FooComponent }) => FooComponent);
     }
   }
